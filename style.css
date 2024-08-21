@@ -1,0 +1,295 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+    background-color: rgb(49, 49, 45);
+    margin: auto;
+  }
+
+
+.rama_ceasului {
+  width:450px;
+  max-width: 100%;
+  height: 450px;
+  max-height: 100%;
+  border: 4px solid rgb(252, 255, 250);
+  border-radius: 50%;
+  position: absolute;
+  top:50px ;
+  left: 50px;
+  right: 50px;
+  bottom: 50px;
+  background-color: rgb(29, 28, 28);
+  
+}
+
+.mijlocul_ceasului {
+  border: 6px solid rgb(215, 9, 9);
+  border-radius: 50%;
+  position: absolute;
+  top: 49%;
+  left: 49%;
+  background-color: rgb(198, 191, 206);
+}
+
+                          /* ---  ACELE CEASULUI ---*/
+.secunde {
+  border: 2px solid 	#f4f3ee;
+  position: absolute;
+  transform-origin:100% 100%;
+  height: 45%;
+  width:2px;
+  bottom:50%;
+  left: 50%;
+  animation-name: secunde;
+  animation-duration: 60s;
+  animation-timing-function:linear;
+  animation-iteration-count: infinite;
+  
+}
+
+@keyframes secunde {
+  0% {
+   transform:rotate(0deg);
+
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.minute {
+  border: 2px solid 	#f8f7f5;
+  position: absolute;
+  transform-origin: 100% 100%;
+  width: 2px;
+  height: 40%;
+  bottom:50%;
+  left: 50%;
+  animation-name: minute;
+  animation-duration: 3600s;
+  animation-timing-function:linear;
+  animation-iteration-count: infinite;
+  
+}
+
+@keyframes minute {
+  0% {
+   transform:rotate(0deg);
+
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.ora {
+  border: 2px solid 	#d43737;
+  position: absolute;
+  transform-origin: 100% 100%;
+  height: 32%;
+  width: 2px;
+  bottom: 50%;
+  left: 50%;
+  animation-name: ora;
+  animation-duration: 43200s;
+  animation-timing-function:linear;
+  animation-iteration-count: infinite;
+  
+}
+
+@keyframes ora {
+  0% {
+   transform:rotate(0deg);}
+  
+  8.33% {
+    transform: rotate(30deg);
+  }
+  16.66% {
+    transform: rotate(30deg);
+  }
+  25% {
+    transform: rotate(30deg);
+  }
+  33.33% {
+    transform: rotate(30deg);
+  }
+  41.66% {
+    transform: rotate(30deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  58.33% {
+    transform: rotate(30deg);
+  }
+  66.66% {
+    transform: rotate(30deg);
+  }
+  75% {
+    transform: rotate(30deg);
+  }
+  83.33% {
+    transform: rotate(30deg);
+  }
+  91.66% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(30deg);
+  }
+}
+
+
+
+
+/* -- ORE PE CEAS --*/
+
+.linia1/*ora 12*/{
+ position: absolute;
+ top: 0%;
+ left: 49.5%;
+ width: 2px;
+ height: 5px;
+ border: 1px solid rgb(249, 245, 245);
+ background-color: white;
+}
+
+.linia5/*ora 1*/{
+  position: absolute;
+  top: 8.33%;
+  right:22.5%;
+  width: 5px;
+  height: 2px;
+  border: 1px solid rgb(248, 244, 244);
+  transform: rotate(125deg);
+  background-color: white;
+ 
+}
+
+.linia6/*ora 2*/{
+  position: absolute;
+  top: 25%;
+  right:6.5%;
+  width: 5px;
+  height: 2px;
+  border: 1px solid rgb(250, 248, 248);
+  transform: rotate(150deg);
+  background-color: white;
+  
+}
+
+.linia4/*ora 3*/{
+  position: absolute;
+  top: 50%;
+  right:0%;
+  width: 5px;
+  height: 2px;
+  border: 1px solid rgb(246, 244, 244);
+  background-color: white;
+}
+
+.linia9/*ora 4*/{
+  position: absolute;
+  top: 75%;
+  right:6.8%;
+  width: 5px;
+  height: 2px;
+  border: 1px solid rgb(250, 247, 247);
+  transform: rotate(34deg);
+  background-color: white;
+}
+
+.linia10/*ora 5*/{
+  position: absolute;
+  top: 91.67%;
+  right:23%;
+  width: 5px;
+  height: 2px;
+  border: 1px solid rgb(250, 246, 246);
+  transform: rotate(57deg);
+  background-color: white;
+}
+
+.linia2/*ora 6*/ {
+  position: absolute;
+  bottom: 0%;
+  left:49.5%;
+  width: 2px;
+  height: 5px;
+  border: 1px solid rgb(253, 248, 248);
+  background-color: white;
+
+}
+
+.linia11/*ora 7*/{
+  position: absolute;
+  top: 91.67%;
+  left:23%;
+  width: 5px;
+  height: 2px;
+  border: 1px solid rgb(249, 247, 247);
+  transform: rotate(125deg);
+  background-color: white;
+  
+}
+
+.linia12/*ora 8*/{
+  position: absolute;
+  top: 75%;
+  left:6.8%;
+  width: 5px;
+  height: 2px;
+  border: 1px solid rgb(247, 244, 244);
+  transform: rotate(150deg);
+  background-color: white;
+}
+
+.linia3/*ora 9*/{
+  position: absolute;
+  top: 50%;
+  left:0%;
+  width: 5px;
+  height: 2px;
+  border: 1px solid rgb(249, 246, 246);
+  background-color: white;
+}
+
+
+.linia8/*ora 10*/{
+  position: absolute;
+  top: 25%;
+  left:6.6%;
+  width: 5px;
+  height: 2px;
+  border: 1px solid rgb(250, 247, 247);
+  transform: rotate(30deg);
+  background-color: white;
+}
+
+.linia7/*ora 11*/{
+  position: absolute;
+  top: 8.33%;
+  left:22.5%;
+  width: 5px;
+  height: 2px;
+  border: 1px solid rgb(251, 247, 247);
+  transform: rotate(55deg);
+  background-color: white;
+}
+/* -- MEDIA PENTRU MOBIL  -- */
+
+/*@media(max-width:432px) {
+  .rama_ceasului {
+    width:300px;
+    height: 300px;
+    border: 4px solid rgb(34, 28, 28);
+    border-radius: 50%;
+    background-color: rgb(250, 228, 232);
+    margin: auto;
+    margin-top: 10px;
+    }
+    
+}*/
+
